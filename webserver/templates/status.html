@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>User grades</title>
+	</head>
+	<body>
+		<ul id="grades">
+			{% for user in grades %}
+				<li>{{ user.name }} {{ user.grade }}</li>
+			{% endfor %}
+		</ul>
+	<body>
+</html>
