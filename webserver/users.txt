@@ -1,1 +1,3 @@
-one_user_per_line
+# List each user on their own line
+sample_user_1
+sample_user_2
