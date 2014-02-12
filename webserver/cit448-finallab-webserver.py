@@ -60,8 +60,10 @@ if __name__ == '__main__':
     
     user_file = open('users.txt', 'r')
     for line in user_file:
-        grade_list.append(user(line.rstrip(), 2.0))
+        line = line.rstrip()
+        if len(line) > 0 and line[0] != '#':
+            grade_list.append(user(line, 2.0))
     user_file.close()
     
-    app.debug = True
-    app.run()
+    #app.debug = True
+    app.run(host='0.0.0.0')
